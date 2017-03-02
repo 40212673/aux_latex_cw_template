@@ -1,9 +1,9 @@
 %FILL THESE IN
 \def\mytitle{Coursework Report}
-\def\mykeywords{Fill, These, In, So, google, can, find, your, report}
-\def\myauthor{Cool Student}
-\def\contact{4008000@napier.ac.uk}
-\def\mymodule{Module Title (SET00000)}
+\def\mykeywords{Hell, OpenGL, Phong, C++, Coursework, Graphics, Lighting, Normal, Mapping}
+\def\myauthor{Michal Lange}
+\def\contact{40212673@live.napier.ac.uk}
+\def\mymodule{Module Title (SET08116)}
 %YOU DON'T NEED TO TOUCH ANYTHING BELOW
 \documentclass[10pt, a4paper]{article}
 \usepackage[a4paper,outer=1.5cm,inner=1.5cm,top=1.75cm,bottom=1.5cm]{geometry}
@@ -76,71 +76,37 @@
 	\textbf{Keywords -- }{\mykeywords}
     %START FROM HERE
 	\section{Introduction}
+	The author of the coursework wished to recreate a hell scene. Inspiration was taken from the aesthetics of Diablo 2, using a mostly red and black colour scheme to convey a hellish atmosphere. The author took further inspiration from games such as Doom 3, in which there was clear interaction of the environment with the light.
+	
+	Difficulties arose during the coursework due to some over-ambitious goals e.g. combining multiple complex shaders for one effect (Normalmapping, Blend with movement). The key to successfully completing the coursework, was prioritising essential objects and effects to make a convincing scene.
+	
+	
     \paragraph{Referencing}
     You should cite References like this: \cite{Keshav}. The references are saved in an external .bib file, and will automatically be added ot the bibliography at the end once cited.
     
     \figuremacro{h}{placeholder}{ImageTitle}{ - Some Descriptive Text}{1.0}
 	
-	\section{Formatting}
+	\section{Related Work}
+	All techniques and effects applied in this coursework were taken from the first 8 weeks of the Napier Computer Graphics Workbook. The main techniques implemented with a few minor changes were; the application of Phong shading, use of Normal Mapping, use of Shadows and Hierarchy transformation.
 	Some common formatting you may need uses these commands for \textbf{Bold Text}, \textit{Italics}, and \underline{underlined}.
-	\subsection{LineBreaks}
-	Here is a line
-    
-    Here is a line followed by a double line break.
-	This line is only one line break down from the above, Notice that latex can ignore this
-    
-    We can force a break \\ with the break operator.
-    
-	\subsection{Maths}
-    Embedding Maths is Latex's bread and butter    
-    
-    {\centering \Large \(
-        J = \begin{bmatrix}
-            \frac{\delta e}{\delta \theta _0}
-            \frac{\delta e}{\delta \theta _1}
-            \frac{\delta e}{\delta \theta _2}
-        \end{bmatrix}
-        = e_{current} - e_{target} 
-    \)\par}
 	
-	\subsection{Code Listing}
-    You can load segments of code from a file, or embed them directly.
-    
-\begin{lstlisting}[caption = Hello World! in c++]
-#include <iostream>
-
-int main() {
-    std::cout << "Hello World!" << std::endl;
-    std::cin.get();
-    return 0;
-}
-\end{lstlisting}
-
-\lstinputlisting[caption = Hello World! in python script]{./sourceCode/hello.py}
-    
-\subsection{PseudoCode}
-
-\begin{algorithm}[h]
-\For{$i = 0$ \KwTo $100$}{
- print\_number = true\;
-\If{i is divisible by 3}{
- print "Fizz"\;
- print\_number = false\;
-}
-\If{i is divisible by 5}{
- print "Buzz"\;
- print\_number = false\;
-}
-\If{print\_number}{
-    print i\;
-}
-print a newline\;
-}
-\caption{FizzBuzz}
-\end{algorithm}
+	\section{Implementation}
+	\subsection{Code structure}
+	The code was split into subsections of functions for 
 	
-\section{Conclusion}	
+	\subsection{Lighting}
+	
+	\subsection{Hierarchy}
+	
+	\subsection{Normal Mapping}
+	
+	\subsection{Shadows}
+	
+	\section{Future Work}
+	The two biggest visual issues with the scene was the unrealistic flat terrain and the jarring light blue surroundings of the environment. Further research in implementing sky boxes and using terrain generation will help alleviate these problems. Furthermore, the scene itself is small in size, more objects could be added and it's general size could be increased to truly sell it as a demonic landscape.
+
+\section{Conclusion}
 \bibliographystyle{ieeetr}
 \bibliography{references}
-		
+
 \end{document}
